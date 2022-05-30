@@ -1,0 +1,87 @@
+
+/***フォローボタンラベル部分***/
+.follow-label {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/***ここからフォローボタンカラー***/
+.follow-btn-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 0 1em;
+}
+
+.follow-btn-item a {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: .15em;
+    padding: .1em;
+    color: #fff;
+    font-size: 26px;
+    line-height: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: .2s;
+}
+.follow-btn-item a:hover {
+    transform: translateY(-4px);
+    box-shadow: 1px 10px 8px -4px rgba(0,0,0,.2);
+    opacity: .8;
+    color: #fff;
+}
+/*** 読者登録 ***/
+.follow-btn-item .hatena {
+    background: #333;
+}
+/*** ツイッター ***/
+.follow-btn-item .twitter {
+    background: #1da1f2;
+}
+/*** feedly ***/
+.follow-btn-item .feedly {
+    background: #2bb24c;
+}
+/*** pinterest ***/
+.follow-btn-item .pinterest {
+    background: #e60023;
+}
+
+/*** youtube ***/
+.follow-btn-item .youtube {
+    background: #ff0000;
+}
+
+/*** instagram ***/
+.follow-btn-item .instagram {
+    background: linear-gradient(125deg, #427eff 0%, #f13f79 70%) no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.follow-btn-item .instagram::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -14px;
+    width: 53px;
+    height: 53px;
+    background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+
+.blogicon-instagram {
+    position: relative;
+    z-index: 1;
+}
+
+/*** instagramここまで ***/
+.follow-btn-item i {
+    vertical-align: 7%;
+}

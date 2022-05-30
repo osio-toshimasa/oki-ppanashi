@@ -1,0 +1,91 @@
+/* ふきだし */
+.talk {
+    margin-bottom: 40px;
+}
+
+.talk figure img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid darkslategrey;
+    border-radius: 50%;
+    margin: 0;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.talk-img {
+    padding: 5px 0 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+p.talk-text {
+    margin: 0 0 8px;
+}
+
+p.talk-text:last-child {
+    margin-bottom: 0;
+}
+
+.talk:after,.talk:before {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* 右吹き出し */
+
+.talk-img-r {
+    margin-right: 4px;
+    margin-top: -1px;
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+
+.talk-text-r {
+    position: relative;
+    margin-right: 100px;
+    padding: 1.2em;
+    background: #FFEBC1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.talk-text-r:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #FFEBC1;
+    top: 15px;
+    right: -20px;
+}
+
+/* 左吹き出し */
+
+.talk-img-l {
+    margin-left: 4px;
+    margin-top: -1px;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.talk-text-l {
+    color: #444;
+    position: relative;
+    margin-left: 100px;
+    padding: 1.2em;
+    background: #FFEBC1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.talk-text-l:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #FFEBC1;
+    top: 15px;
+    left: -20px;
+}
+
