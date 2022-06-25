@@ -12,8 +12,12 @@ let clock = new Vue ({
     methods: {
         generate: function() {
             let password = Opal.EasyPasswordMaker.$make(parseInt(this.characters, 10), this.is_lower);
-            console.log(password);
+            this.passwords.unshift(password);
         },
+
+        reset: function() {
+            this.passwords = [];
+        }
     },
     /* Life Cycle Hooks */
 
