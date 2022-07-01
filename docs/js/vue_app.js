@@ -13,6 +13,11 @@ let clock = new Vue ({
         generate: function() {
             let password = Opal.EasyPasswordMaker.$make(parseInt(this.characters, 10), this.is_lower);
             this.passwords.unshift(password);
+            if (this.passwords.length > 10)
+            {
+                console.log("over");
+                this.passwords.splice(this.passwords.length-1,1);
+            }
         },
 
         reset: function() {
